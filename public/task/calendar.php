@@ -11,6 +11,7 @@
     </head>
     <body>
         <div class="container mt-5">
+            <?php require_once('public/template/nav.php') ?>
             <div id='calendar'></div>
         </div>
     </body>

@@ -7,7 +7,8 @@
         <script src='/public/task.js'></script>
 	</head>
     <body>
-        <div class="container">
+        <div class="container mt-5">
+            <?php require_once('public/template/nav.php') ?>
             <h1 class="text-center mt-5">Edit Task</h1>
             <form action="/tasks/<?php echo $task['id'] ?>/update" method="post" class="mx-auto w-50">
                 <div class="form-group">

@@ -13,6 +13,7 @@
     </style>
     <body>
         <div class="container mt-5">
+            <?php require_once('public/template/nav.php') ?>
             <table class="table table-striped">
                 <tr class="bg-warning">
                     <th>#</th>
