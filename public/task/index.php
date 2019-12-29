@@ -15,14 +15,14 @@
         <div class="container mt-5">
             <table class="table table-striped">
                 <tr class="bg-warning">
-                    <th>Id</th>
+                    <th>#</th>
                     <th>Name</th>
                     <th>Status</th>
                     <th class="text-left">Action</th>
                 </tr>
-                <?php foreach ($tasks as $task) : ?>
+                <?php foreach ($tasks as $key => $task) : ?>
                 <tr>
-                    <td class="font-weight-bold"><?php echo $task['id'] ?></td>
+                    <td class="font-weight-bold"><?php echo $key ?></td>
                     <td><p class="text-info"><?php echo $task['name'] ?></p></td>
                     <td>
                         <span class="badge badge-<?php echo Config::STATUS_LABEL[$task['status']]?>"><?php echo Config::STATUS[$task['status']] ?></span></td>

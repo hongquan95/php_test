@@ -4,10 +4,11 @@
     <head>
         <title>Add Book</title>
         <?php require_once('public/template/meta.php') ?>
+        <script src='/public/task.js'></script>
 	</head>
     <body>
         <div class="container">
-            <h1 class="text-center mt-5">Edit Task</h1> 
+            <h1 class="text-center mt-5">Edit Task</h1>
             <form action="/tasks/<?php echo $task['id'] ?>/update" method="post" class="mx-auto w-50">
                 <div class="form-group">
                     <label>Name </label>
@@ -29,11 +30,11 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label>Start Date</label>
-                            <input type="date" name="start_date" class="form-control" value="<?php echo $task['start_date'] ?>" required>
+                            <input type="text" name="start_date" class="form-control date-picker" value="<?php echo $task['start_date'] ?>" required>
                         </div>
                         <div class="col-md-6">
                             <label>End Date</label>
-                            <input type="date" name="end_date" class="form-control" value="<?php echo $task['end_date'] ?>" required>
+                            <input type="text" name="end_date" class="form-control date-picker" value="<?php echo $task['end_date'] ?>" required>
                         </div>
                     </div>
                 </div>

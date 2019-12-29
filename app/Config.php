@@ -31,9 +31,9 @@ class Config
     const SHOW_ERRORS = true;
 
     const STATUS = [
-        1 => 'Doing',
-        2 => 'Pending',
-        3 => 'Done',
+        1 => 'Planning',
+        2 => 'Doing',
+        3 => 'Complete',
     ];
     const STATUS_LABEL = [
         1 => 'primary',

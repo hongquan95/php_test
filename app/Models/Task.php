@@ -22,6 +22,14 @@ class Task extends DB
         $stmt = $db->query('SELECT * FROM tasks');
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public static function getDataBetweenDate($start, $end)
+    {
+        $db = static::getDB();
+        $sql = "SELECT * FROM tasks where start_date < ? AND end_date >= ?";
+        $stmt = $db->prepare($sql);
+        $stmt->execute([$end, $start]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
     public static function findOne($id)
     {
         $db = static::getDB();
