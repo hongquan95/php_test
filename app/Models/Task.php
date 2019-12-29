@@ -5,17 +5,6 @@ use PDO;
 
 class Task extends DB
 {
-    public $id;
-    public $name;
-    public $author;
-    public $year;
-    public function __construct($id, $name, $author, $year)
-    {
-        $this->id = $id;
-        $this->name = $name;
-        $this->author = $author;
-        $this->year = $year;
-    }
     public static function getAll()
     {
         $db = static::getDB();
