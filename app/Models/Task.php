@@ -19,7 +19,7 @@ class Task extends DB
     public static function getAll()
     {
         $db = static::getDB();
-        $stmt = $db->query('SELECT * FROM tasks');
+        $stmt = $db->query('SELECT * FROM tasks ORDER BY id DESC');
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public static function getDataBetweenDate($start, $end)
