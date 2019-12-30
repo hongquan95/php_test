@@ -27,11 +27,11 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label>Start Date</label>
-                            <input type="text" name="start_date" class="form-control date-picker" required>
+                            <input type="text" name="start_date" class="form-control date-picker" autocomplete="off" required>
                         </div>
                         <div class="col-md-6">
                             <label>End Date</label>
-                            <input type="text" name="end_date" class="form-control date-picker" required>
+                            <input type="text" name="end_date" class="form-control date-picker" autocomplete="off" required>
                         </div>
                     </div>
                 </div>

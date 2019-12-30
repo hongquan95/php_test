@@ -31,11 +31,11 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label>Start Date</label>
-                            <input type="text" name="start_date" class="form-control date-picker" value="<?php echo $task['start_date'] ?>" required>
+                            <input type="text" name="start_date" class="form-control date-picker" autocomplete="off" value="<?php echo $task['start_date'] ?>" required>
                         </div>
                         <div class="col-md-6">
                             <label>End Date</label>
-                            <input type="text" name="end_date" class="form-control date-picker" value="<?php echo $task['end_date'] ?>" required>
+                            <input type="text" name="end_date" class="form-control date-picker" autocomplete="off" value="<?php echo $task['end_date'] ?>" required>
                         </div>
                     </div>
                 </div>

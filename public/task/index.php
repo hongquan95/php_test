@@ -18,6 +18,8 @@
                 <tr class="bg-warning">
                     <th>#</th>
                     <th>Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
                     <th>Status</th>
                     <th class="text-left">Action</th>
                 </tr>
@@ -25,6 +27,8 @@
                 <tr>
                     <td class="font-weight-bold"><?php echo $key ?></td>
                     <td><p class="text-info"><?php echo $task['name'] ?></p></td>
+                    <td><p class="text-info"><?php echo $task['start_date'] ?></p></td>
+                    <td><p class="text-info"><?php echo $task['end_date'] ?></p></td>
                     <td>
                         <span class="badge badge-<?php echo Config::STATUS_LABEL[$task['status']]?>"><?php echo Config::STATUS[$task['status']] ?></span></td>
                     <td class="btn-group text-center">

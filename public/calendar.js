@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const COLOR = {
-        1: '#28a745',
+        1: '#007bff',
         2: '#ffc107',
-        3: '#007bff',
+        3: '#28a745',
     };
     var calendarEl = document.getElementById("calendar");
 
